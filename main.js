@@ -51,17 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.navbar-email')
         .addEventListener('click', () => {
             document.querySelector('.desktop-menu').classList.toggle('inactive')
-            document.querySelector('.product-detail').classList.add('inactive')
+            document.querySelector('#shopping-cart-container').classList.add('inactive')
         })
 
     document.querySelector('.menu')
         .addEventListener('click', () => {
             document.querySelector('.mobile-menu').classList.toggle('inactive')
-            document.querySelector('.product-detail').classList.add('inactive')
+            document.querySelector('#shopping-cart-container').classList.add('inactive')
         })
 
     document.querySelector('.navbar-shopping-cart').addEventListener('click', () => {
-        document.querySelector('.product-detail').classList.toggle('inactive')
+        document.querySelector('#shopping-cart-container').classList.toggle('inactive')
         document.querySelector('.mobile-menu').classList.add('inactive')
         document.querySelector('.desktop-menu').classList.add('inactive')
     })
